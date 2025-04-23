@@ -23,7 +23,7 @@ pipeline{
                     usernameVariable:"dockerHubUser", 
                     passwordVariable:"dockerHubPass")]){
                 sh 'echo $dockerHubPass | docker login -u $dockerHubUser --password-stdin'
-                sh "docker image tag restaurent-app:latest ${env.dockerHubUser}/restaurent-g0u74m:latest"
+                sh "docker image tag restaurent-g0u74m:latest ${env.dockerHubUser}/restaurent-g0u74m:latest"
                 sh "docker push ${env.dockerHubUser}/restaurent-g0u74m:latest"
                 }
             }
