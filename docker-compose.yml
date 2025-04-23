@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  web:
+    image: g0u74m/restaurent-g0u74m
+    ports:
+      - "80:5000"
