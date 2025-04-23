@@ -7,7 +7,7 @@ pipeline{
         stage("Code Clone"){
             steps{
                 echo "Code Clone Stage"
-                git url: "https://github.com/Khushisen/restaurant-recommendation-system.git", branch: "main"
+                git url: "https://github.com/manish-g0u74m/testing.git", branch: "master"
             }
         }
         stage("Code Build & Test"){
